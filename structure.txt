@@ -1,0 +1,21 @@
+portfolio/
+├── public/
+│   ├── index.html
+│   └── resume.html
+├── src/
+│   ├── assets/
+│   │   ├── images/
+│   │   └── icons/
+│   ├── components/
+│   │   └── Header.js
+│   ├── pages/
+│   │   ├── Home.js
+│   │   ├── About.js
+│   │   └── Projects.js
+│   ├── styles/
+│   │   ├── main.css
+│   │   └── tailwind.css
+│   └── index.js
+├── .gitignore
+├── package.json
+└── README.md
