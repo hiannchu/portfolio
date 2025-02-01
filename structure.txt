@@ -1,6 +1,6 @@
 portfolio/
 ├── index.html
-├── resume.html
+├── profile.html
 ├── projects.html
 ├── assets/
 │   ├── images/
@@ -11,10 +11,15 @@ portfolio/
 │       └── linkedin.svg
 ├── css/
 │   ├── styles.css
-│   └── tailwind.css
+│   └── output.css
 ├── js/
 │   ├── main.js
 │   └── animations.js
+├── project-7180/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── images/
 ├── .gitignore
 ├── package.json
 └── README.md
