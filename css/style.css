@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-    --color-hiyellow: #EDFF00;
-    --color-calmgrey:#E7E6E2;
-    --color-deepgrey:#020204;
+    --color-lime: #B2FA63;
+    --color-forest: #243838;
+    --color-sun: #FF7833;
+    --color-lavender: #B2A1FF;
     --font-eleganttitle: 'Lexend Exa', serif;
-    --font-major: 'Montserrat', sans-serif;
     --font-title: 'Funnel Display', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
     --text-huge: 12rem;
 }
