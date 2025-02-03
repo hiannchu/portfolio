@@ -656,6 +656,9 @@
   .bg-sun {
     background-color: var(--color-sun);
   }
+  .bg-\[url\(\'\/assets\/images\/profile\.jpg\'\)\] {
+    background-image: url('/assets/images/profile.jpg');
+  }
   .bg-\[url\(\/assets\/images\/profile\.jpg\)\] {
     background-image: url(/assets/images/profile.jpg);
   }
@@ -747,11 +750,6 @@
   .md\:grid-cols-5 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(5, minmax(0, 1fr));
-    }
-  }
-  .md\:bg-\[url\(\'\.\/assets\/images\/profile\.jpg\'\)\] {
-    @media (width >= 48rem) {
-      background-image: url('./assets/images/profile.jpg');
     }
   }
   .md\:bg-\[url\(\'\/assets\/images\/profile\.jpg\'\)\] {
