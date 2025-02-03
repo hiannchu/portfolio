@@ -601,11 +601,20 @@
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
+  .h-\[2vh\] {
+    height: 2vh;
+  }
+  .h-\[4vh\] {
+    height: 4vh;
+  }
   .h-\[6vh\] {
     height: 6vh;
   }
   .h-\[8vh\] {
     height: 8vh;
+  }
+  .h-\[10\%\] {
+    height: 10%;
   }
   .h-\[10vh\] {
     height: 10vh;
@@ -616,14 +625,32 @@
   .h-\[20\%\] {
     height: 20%;
   }
+  .h-\[20rem\] {
+    height: 20rem;
+  }
   .h-\[20vh\] {
     height: 20vh;
   }
-  .h-\[2vh\] {
-    height: 2vh;
+  .h-\[30\%\] {
+    height: 30%;
+  }
+  .h-\[80\%\] {
+    height: 80%;
+  }
+  .h-\[90\%\] {
+    height: 90%;
+  }
+  .h-\[100\%\] {
+    height: 100%;
+  }
+  .h-\[300\%\] {
+    height: 300%;
   }
   .h-\[30vh\] {
     height: 30vh;
+  }
+  .h-\[32rem\] {
+    height: 32rem;
   }
   .h-\[40vh\] {
     height: 40vh;
@@ -631,29 +658,11 @@
   .h-\[45vh\] {
     height: 45vh;
   }
-  .h-\[4vh\] {
-    height: 4vh;
-  }
-  .h-\[10\%\] {
-    height: 10%;
-  }
-  .h-\[20rem\] {
-    height: 20rem;
-  }
-  .h-\[30\%\] {
-    height: 30%;
-  }
-  .h-\[32rem\] {
-    height: 32rem;
-  }
   .h-\[50vh\] {
     height: 50vh;
   }
   .h-\[60vh\] {
     height: 60vh;
-  }
-  .h-\[80\%\] {
-    height: 80%;
   }
   .h-\[80vh\] {
     height: 80vh;
@@ -664,17 +673,8 @@
   .h-\[87vh\] {
     height: 87vh;
   }
-  .h-\[90\%\] {
-    height: 90%;
-  }
   .h-\[90vh\] {
     height: 90vh;
-  }
-  .h-\[100\%\] {
-    height: 100%;
-  }
-  .h-\[300\%\] {
-    height: 300%;
   }
   .h-\[680px\] {
     height: 680px;
@@ -1051,6 +1051,11 @@
   .md\:grid-rows-6 {
     @media (width >= 48rem) {
       grid-template-rows: repeat(6, minmax(0, 1fr));
+    }
+  }
+  .md\:bg-\[url\(\.\/assets\/images\/profile\.jpg\)\] {
+    @media (width >= 48rem) {
+      background-image: url(./assets/images/profile.jpg);
     }
   }
   .md\:bg-\[url\(\/assets\/images\/profile\.jpg\)\] {
