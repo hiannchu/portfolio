@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,24 +11,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="fade-in">
     <div class="grid md:grid-cols-3 grid-cols-1 h-dvh ">
-        <div class="bg-lime col-span-2 pt-8 pb-8 pl-8 pr-4 grid grid-flow-row">
+        <div class="bg-lime col-span-2 pt-8 pb-8 pl-8 pr-4 grid grid-flow-row text-forest">
             <div class="md:text-huge text-8xl font-title">Title</div>
-            <div class="content-end font-body">Contact</div>
+            <div class="content-end font-body">
+                Contact <br>
+                hi@annchu.me <br>
+                <div>
+                LinkedIn<svg class="size-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                </div>
+                  
+            </div>
         </div>
         <div class="grid grid-flow-col md:text-7xl text-6xl font-body font-light">
-            <div class="bg-lavender pt-8 pb-8 text-end content-center" style="writing-mode: vertical-lr;">projects</div>
-            <div class="bg-forest pt-8 pb-8 content-center" style="writing-mode: vertical-lr;">
-                <a href="./profile.html">profile↗︎</a>
+            <div onclick="location.href='#projects';" class="bg-lavender hover:bg-white pt-8 pb-8 justify-end flex items-center text-sun hover:text-forest" style="writing-mode: vertical-lr;">
+                <div>
+                    projects
+                </div>
+                <svg class="size-20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                </svg>
             </div>
-            <div class="bg-sun pt-8 pb-8 content-center" style="writing-mode: vertical-lr;">gallery↗︎</div>
+            <div onclick="location.href='profile.html';" class="bg-forest hover:bg-white pt-8 pb-8 flex items-center text-lavender hover:text-forest" style="writing-mode: vertical-lr;">
+                <svg class="size-20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+                <div>
+                    profile
+                </div>
+            </div>
+            <div onclick="location.href='gallery.html';" class="bg-sun hover:bg-white pt-8 pb-8 flex items-center text-lime hover:text-forest" style="writing-mode: vertical-lr;">
+                <svg class="size-20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                </svg>
+                <div>
+                    gallery
+                </div>
+            </div>
         </div>
-
     </div>
 
-    <div class="col-span-6 row-span-6 bg-lavender p-8 h-dvh ">
-        <h1 class="font-title text-9xl mb-8">Projects</h1>
+    <div id="projects" class="col-span-6 row-span-6 bg-lavender p-8 h-dvh pt-40">
+        <h1 class="font-title text-9xl mb-8 text-forest">Projects</h1>
         <div class="col-span-6 row-span-6 grid grid-flow-row  pt-8 pl-4 pr-4 pb-8 font-body">
             <div class="text-4xl">
                 <a href="./project-7180/deco7180.html" target="_blank">DECO7180 Portfolio</a>

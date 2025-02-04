@@ -12,3 +12,27 @@
     --font-body: 'Montserrat', sans-serif;
     --text-huge: 12rem;
 }
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+/* Apply to all elements */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 2s ease-in-out forwards;
+}
+  
+/* Keyframes for fade-in effect */
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+  
