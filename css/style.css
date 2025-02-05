@@ -20,7 +20,7 @@ a.fill-div {
     text-decoration: none;
 }
 
-/* Apply to all elements */
+/* Apply to elements with fade-in effect */
 .fade-in {
     opacity: 0;
     animation: fadeInAnimation 2s ease-in-out forwards;
@@ -33,6 +33,26 @@ a.fill-div {
     }
     to {
         opacity: 1;
+    }
+}
+
+/* Apply to elements with inifite scroll effect */
+.ticker-wrapper {
+    display: flex;
+    /* gap: 2%; */
+    white-space: nowrap;
+    position: relative;
+    will-change: transform;
+    animation: scrollAnimation 10s linear infinite;
+}
+
+/* Keyframes for inifite scroll effect */
+@keyframes scrollAnimation {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(50%);
     }
 }
   

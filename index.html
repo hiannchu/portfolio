@@ -12,8 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="fade-in">
-    <div class="grid md:grid-cols-3 grid-cols-1 h-dvh ">
-        <div class="bg-lime col-span-2 pt-8 pb-8 pl-8 pr-4 grid grid-flow-row text-forest">
+    <div class="grid md:grid-cols-3 grid-cols-1">
+        <div class="bg-lime col-span-2 pt-8 pb-8 pl-8 pr-4 grid grid-flow-row h-[50vh] md:h-dvh text-forest">
             <div class="md:text-huge text-8xl font-title">Title</div>
             <div class="content-end font-body">
                 Contact <br>
@@ -26,14 +26,28 @@
                   
             </div>
         </div>
-        <div class="grid grid-flow-col md:text-7xl text-6xl font-body font-light">
-            <div onclick="location.href='#projects';" class="bg-lavender hover:bg-white pt-8 pb-8 justify-end flex items-center text-sun hover:text-forest" style="writing-mode: vertical-lr;">
-                <div>
-                    projects
+        <div class="grid grid-flow-col md:text-7xl text-6xl font-body font-light h-[50vh] md:h-dvh">
+            <div onclick="location.href='#projects';" class="bg-lavender hover:bg-white pt-8 pb-8 justify-end flex items-center text-sun hover:text-forest overflow-hidden whitespace-nowrap" style="writing-mode: vertical-lr;">
+                <div class="ticker-wrapper">
+                    <div>projects</div>
+                    <svg class="size-20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                    </svg>
+                    <div>projects</div>
+                    <svg class="size-20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                    </svg>
+        
+                    <!-- Duplicate items for seamless looping -->
+                    <div>projects</div>
+                    <svg class="size-20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                    </svg>
+                    <div>projects</div>
+                    <svg class="size-20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+                    </svg>
                 </div>
-                <svg class="size-20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
-                </svg>
             </div>
             <div onclick="location.href='profile.html';" class="bg-forest hover:bg-white pt-8 pb-8 flex items-center text-lavender hover:text-forest" style="writing-mode: vertical-lr;">
                 <svg class="size-20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -54,12 +68,13 @@
         </div>
     </div>
 
-    <div id="projects" class="col-span-6 row-span-6 bg-lavender p-8 h-dvh pt-40">
-        <h1 class="font-title text-9xl mb-8 text-forest">Projects</h1>
-        <div class="col-span-6 row-span-6 grid grid-flow-row  pt-8 pl-4 pr-4 pb-8 font-body">
-            <div class="text-4xl">
-                <a href="./project-7180/deco7180.html" target="_blank">DECO7180 Portfolio</a>
-                #Front-end
+    <div id="projects" class="bg-lavender p-8 pt-40 h-dvh">
+        <h1 class="font-title text-8xl mb-8 text-forest">Projects</h1>
+        <div class="font-body">
+            <div onclick="location.href='profile.html';" class="text-4xl flex border-lime text-lime border-2 p-6 mb-6 hover:bg-amber-600 hover:border-transparent">
+                <div class="flex-1 items-end">IMG</div>
+                <div class="flex-3">Title</div>
+                <div class="flex-2 ">2</div>
             </div>
             <div>3</div>
             <div>4</div>
@@ -67,9 +82,6 @@
             <div>6</div>
         </div>
     </div>
-
-    
-
 
 </body>
 </html>
