@@ -11,6 +11,7 @@
     --font-title: 'Funnel Display', sans-serif;
     --font-body: 'Montserrat', sans-serif;
     --text-huge: 12rem;
+    --text-extrahuge: 18rem;
 }
 
 a.fill-div {
@@ -55,4 +56,3 @@ a.fill-div {
         transform: translateY(50%);
     }
 }
-  
