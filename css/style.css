@@ -56,3 +56,15 @@ a.fill-div {
         transform: translateY(50%);
     }
 }
+
+/* Zoom-in animation for image */
+.zoom-in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.zoom-in.show {
+    opacity: 1;
+    transform: scale(1);
+}
