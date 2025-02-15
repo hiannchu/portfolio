@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-black select-none">
+<body class="bg-black select-none fade-in">
     <div class="p-8 grid sm:grid-cols-10 grid-cols-5">
         <h1 class="sm:col-span-9 col-span-4 font-title md:text-huge text-silver text-8xl break-words hyphens-auto" lang="de">Pixel Weather</h1>
         <div class="font-body font-light text-silver text-end">
@@ -31,7 +31,7 @@
         </p>
         <p class="text-pretty xl:w-[60vw]">
             The solution aims to provide outdoor enthusiasts with a weather app to share real-time updates on weather and conditions at campsites, forests, trails, and other outdoor locations, helping them stay informed and prepared for the rapidly changing weather across Queensland.
-       </p>
+        </p>
         <div>
             <h2 class="md:text-4xl text-2xl font-bold pb-4">Core Features</h2>
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 xl:w-[60vw]">
@@ -61,10 +61,28 @@
                 In the flow chart, rounded rectangles represent screens, while diamond shapes indicate interactions between the user (or guest) and the app. 
                 The diamond shapes may also represent buttons or other elements that users can interact with.
             </p>
-            <img class="zoom-in" src="./assets/images/project-pxiel-user flow.jpg" alt="">
+            <img class="zoom-in" src="./assets/images/project-pixel-user flow.jpg" alt="">
+        </div>
+        <div>
+            <h2 class="md:text-4xl text-2xl font-bold pb-4">Wireframes</h2>
+            <p class="text-pretty xl:w-[60vw] pb-4">
+                These wireframes showcase the key screens for Pixel Weather. The Home screen provides users with comprehensive weather data and forecasts.
+                The Map offers a convenient way for users to explore nearby locations and view their weather conditions through intuitive icons.
+                The Add Post feature allows users to share real-time, firsthand information based on outdoor activity locations. 
+                The process begins with users selecting a location, followed by choosing the current weather conditions. This helps ensure accurate, up-to-date information. 
+                Users can also add a note to provide additional context and inform others about the conditions at the location.
+                For users looking to stay informed, the Community section offers the latest updates from other users. Additionally, Personalized Alerts enable users to track specific weather types, with a focus on extreme conditions like hail, extreme heat, heavy rain, and strong winds.
+            </p>
+            <img class="zoom-in" src="./assets/images/project-pixel-wireframes.png" alt="">
         </div>
     </div>
-
+    <div class="p-8 h-[15vh] content-center flex justify-end font-body text-silver">
+        <button id="backToTop" class="btn hover:text-sun">
+            <svg class="size-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+            </svg>
+        </button>
+    </div>
     
     <script src="./js/script.js"></script>
 </body>
