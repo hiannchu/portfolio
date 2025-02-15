@@ -11,15 +11,61 @@
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-black select-none ">
-    <div class="p-8 grid xl:grid-cols-10 grid-cols-2">
-        <h1 class="xl:col-span-9 font-title md:text-huge text-chalk text-8xl">Pixel Weather</h1>
-        <div class="font-body font-light text-chalk text-end">
+<body class="bg-black select-none">
+    <div class="p-8 grid sm:grid-cols-10 grid-cols-5">
+        <h1 class="sm:col-span-9 col-span-4 font-title md:text-huge text-silver text-8xl break-words hyphens-auto" lang="de">Pixel Weather</h1>
+        <div class="font-body font-light text-silver text-end">
             <a class="hover:text-sun" href="index.html#projects">back</a>
             <br>
             <a class="hover:text-sun" href="profile.html">profile</a>
         </div>
     </div>
+
     <div class="p-12 font-body text-chalk grid gap-8">
+        <a href="https://www.figma.com/proto/gr96qB0zREvWIIaPNghhz2/Pixel-Weather?node-id=0-1&t=cwHsP95iZkk6Cx8Z-1" target="_blank"><button class="hover:bg-sun hover:text-black border-1 p-4 ">Explore Prototype</button></a>
         <p>#UI/UX #Mobile</p>
-        <p class="text-balance w-[60vw]">Traditional weather apps often rely on automat
+        <p>Tools used: Adobe Illustrator, Photoshop, Figma</p>
+        <p class="text-pretty xl:w-[60vw]">
+            Traditional weather apps often rely on automated data that may not accurately reflect hyperlocal, real-time weather conditions, especially in outdoor settings like campgrounds, hiking trails, and remote areas.
+            This lack of precision can make it challenging for outdoor enthusiasts—like hikers and campers—to plan their activities safely. Compared to other Australian weather apps like Weather Zone, many existing apps offer limited community-driven insights, meaning users miss out on firsthand weather reports from people who are actually on-site.
+        </p>
+        <p class="text-pretty xl:w-[60vw]">
+            The solution aims to provide outdoor enthusiasts with a weather app to share real-time updates on weather and conditions at campsites, forests, trails, and other outdoor locations, helping them stay informed and prepared for the rapidly changing weather across Queensland.
+       </p>
+        <div>
+            <h2 class="md:text-4xl text-2xl font-bold pb-4">Core Features</h2>
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 xl:w-[60vw]">
+                <div class="text-balance">
+                    <h3 class="text-lime font-bold">Real-Time Weather Updates</h3>
+                    The homepage will present the current weather of the user's location, using large, identifiable weather icons and a light, high-contrast color palette for a stylish, easy-to-read design.
+                </div>
+                <div class="text-balance">
+                    <h3 class="text-lime font-bold">Map-View Weather Reports</h3>
+                    Allows users to explore nearby weather conditions in real-time, helping them stay informed. The interactive map provides an overview of current conditions across various locations, ensuring users are always up to date.
+                </div>
+                <div class="text-balance">
+                    <h3 class="text-lime font-bold">Share & Update</h3>
+                    Users can enhance the accuracy of weather updates by contributing to the community. They can create new posts by selecting a weather icon and adding helpful suggestions, as accurate weather information is crucial for outdoor enthusiasts.
+                </div>
+                <div class="text-balance">
+                    <h3 class="text-lime font-bold">Community-Drive Weather Insights</h3>
+                    The community feature allows users to view the latest updates from recent visitors at outdoor locations like forests, national parks, campgrounds, and hiking trails. These updates ensure users stay informed.
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <h2 class="md:text-4xl text-2xl font-bold pb-4">User Flow</h2>
+            <p class="text-pretty xl:w-[60vw] pb-4">
+                The user flow chart outlines how visitors will interact with the app, whether they sign in or use it as a guest. A guest mode is included because many users prefer not to create an account or sign up for a new service when first using an app. 
+                In the flow chart, rounded rectangles represent screens, while diamond shapes indicate interactions between the user (or guest) and the app. 
+                The diamond shapes may also represent buttons or other elements that users can interact with.
+            </p>
+            <img class="zoom-in" src="./assets/images/project-pxiel-user flow.jpg" alt="">
+        </div>
+    </div>
+
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
