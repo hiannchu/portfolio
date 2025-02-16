@@ -609,6 +609,15 @@
   .h-\[200vh\] {
     height: 200vh;
   }
+  .w-\[20vw\] {
+    width: 20vw;
+  }
+  .w-\[80vw\] {
+    width: 80vw;
+  }
+  .w-\[100vw\] {
+    width: 100vw;
+  }
   .w-dvw {
     width: 100dvw;
   }
@@ -620,6 +629,9 @@
   }
   .flex-3 {
     flex: 3;
+  }
+  .basis-1 {
+    flex-basis: calc(var(--spacing) * 1);
   }
   .basis-2\/5 {
     flex-basis: calc(2/5 * 100%);
@@ -650,6 +662,9 @@
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-row {
+    flex-direction: row;
   }
   .content-center {
     align-content: center;
@@ -1080,6 +1095,11 @@
   .xl\:w-\[60vw\] {
     @media (width >= 80rem) {
       width: 60vw;
+    }
+  }
+  .xl\:w-\[80vw\] {
+    @media (width >= 80rem) {
+      width: 80vw;
     }
   }
   .xl\:grid-cols-10 {
