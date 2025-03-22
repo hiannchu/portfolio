@@ -1,4 +1,4 @@
-/*! tailwindcss v4.0.12 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.0.15 | MIT License | https://tailwindcss.com */
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -260,8 +260,14 @@
   .flex-3 {
     flex: 3;
   }
-  .basis-1\/5 {
-    flex-basis: calc(1/5 * 100%);
+  .basis-1 {
+    flex-basis: calc(var(--spacing) * 1);
+  }
+  .basis-1\/1 {
+    flex-basis: calc(1/1 * 100%);
+  }
+  .basis-1\/6 {
+    flex-basis: calc(1/6 * 100%);
   }
   .basis-2\/5 {
     flex-basis: calc(2/5 * 100%);
@@ -269,14 +275,8 @@
   .basis-3\/5 {
     flex-basis: calc(3/5 * 100%);
   }
-  .basis-4\/5 {
-    flex-basis: calc(4/5 * 100%);
-  }
   .basis-4\/6 {
     flex-basis: calc(4/6 * 100%);
-  }
-  .basis-5\/5 {
-    flex-basis: calc(5/5 * 100%);
   }
   .grid-flow-col {
     grid-auto-flow: column;
@@ -566,6 +566,13 @@
       }
     }
   }
+  .hover\:bg-chalk {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-chalk);
+      }
+    }
+  }
   .hover\:bg-lime {
     &:hover {
       @media (hover: hover) {
@@ -623,9 +630,19 @@
       grid-template-columns: repeat(10, minmax(0, 1fr));
     }
   }
+  .md\:col-span-1 {
+    @media (width >= 48rem) {
+      grid-column: span 1 / span 1;
+    }
+  }
   .md\:col-span-2 {
     @media (width >= 48rem) {
       grid-column: span 2 / span 2;
+    }
+  }
+  .md\:col-span-3 {
+    @media (width >= 48rem) {
+      grid-column: span 3 / span 3;
     }
   }
   .md\:h-dvh {
