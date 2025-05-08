@@ -1,0 +1,24 @@
+portfolio/
+├── index.html
+├── profile.html
+├── projects.html
+├── assets/
+│   ├── images/
+│   │   └── profile.jpg
+│   └── icons/
+│       ├── instagram.svg
+│       └── linkedin.svg
+├── css/
+│   ├── styles.css
+│   └── output.css
+├── js/
+│   ├── main.js
+│   └── animations.js
+├── project-7180/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── images/
+├── .gitignore
+├── package.json
+└── README.md

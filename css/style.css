@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+    --color-lime: #B2FA63;
+    --color-forest: #243838;
+    --color-sun: #FF7833;
+    --color-lavender: #B2A1FF;
+    --color-silver: #E2E4E7;
+    --color-chalk: #F6F4F1;
+    --font-title: 'Funnel Display', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
+    --text-huge: 10rem;
+    --text-extrahuge: 18rem;
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+/* Apply to elements with fade-in effect */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 2s ease-in-out forwards;
+}
+  
+/* Keyframes for fade-in effect */
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply to elements with inifite scroll effect */
+.ticker-wrapper {
+    display: flex;
+    /* gap: 2%; */
+    white-space: nowrap;
+    position: relative;
+    will-change: transform;
+    animation: scrollAnimation 10s linear infinite;
+}
+
+/* Keyframes for inifite scroll effect */
+@keyframes scrollAnimation {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(50%);
+    }
+}
+
+/* Zoom-in animation for image */
+.zoom-in {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.zoom-in.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* Emojis brust out interaction */
+.emoji {
+    position: absolute;
+    font-size: 1rem;
+    animation: boom 0.8s forwards;
+}
+
+@keyframes boom {
+    0% {
+        transform: scale(0.2) translate(0, 0);
+    }
+    100% {
+        transform: scale(2) translate(var(--x), var(--y));
+    }
+}
