@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/output.css" rel="stylesheet">
+    <title>Hsuan (Ann) Chu</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black select-none fade-in">
+    <div class="p-8 grid sm:grid-cols-10 grid-cols-5">
+        <h1 class="sm:col-span-9 col-span-4 font-title md:text-huge text-silver text-8xl break-words hyphens-auto" lang="de">Smart Bite</h1>
+        <div class="font-body font-light text-silver text-end">
+            <a class="hover:text-sun" href="index.html#projects">back</a>
+            <br>
+            <a class="hover:text-sun" href="profile.html">profile</a>
+        </div>
+    </div>
+    <div class="p-12 font-body text-chalk grid gap-8">
+        <a class="hover:text-sun font-bold" href="https://www.figma.com/proto/gr96qB0zREvWIIaPNghhz2/Pixel-Weather?node-id=0-1&t=cwHsP95iZkk6Cx8Z-1" target="_blank">Explore Prototype</a>
+        <p>Tools used: Adobe Illustrator, Photoshop, Figma</p>
+        <p class="text-pretty xl:w-[60vw]">
+            Traditional weather apps often rely on automated data that may not accurately reflect hyperlocal, real-time weather conditions, especially in outdoor settings like campgrounds, hiking trails, and remote areas.
+            This lack of precision can make it challenging for outdoor enthusiasts—like hikers and campers—to plan their activities safely. Compared to other Australian weather apps like Weather Zone, many existing apps offer limited community-driven insights, meaning users miss out on firsthand weather reports from people who are actually on-site.
+        </p>
+        <p class="text-pretty xl:w-[60vw]">
+            The solution aims to provide outdoor enthusiasts with a weather app to share real-time updates on weather and conditions at campsites, forests, trails, and other outdoor locations, helping them stay informed and prepared for the rapidly changing weather across Queensland.
+        </p>
+        <div>
+            <h2 class="md:text-4xl text-2xl font-bold pb-4">Core Features</h2>
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 xl:w-[60vw]">
+                <div class="text-balance">
+                    <h3 class="text-lime font-bold">Real-Time Weather Updates</h3>
+                    The homepage will present the current weather of the user's location, using large, identifiable weather icons and a light, high-contrast color palette for a stylish, easy-to-read design.
+                </div>
+                <div class="text-balance">
+                    <h3 class="text-lime font-bold">Map-View Weather Reports</h3>
+                    Allows users to explore nearby weather conditions in real-time, helping them stay informed. The interactive map provides an overview of current conditions across various locations, ensuring users are always up to date.
+                </div>
+                <div class="text-balance">
+                    <h3 class="text-lime font-bold">Share & Update</h3>
+                    Users can enhance the accuracy of weather updates by contributing to the community. They can create new posts by selecting a weather icon and adding helpful suggestions, as accurate weather information is crucial for outdoor enthusiasts.
+                </div>
+                <div class="text-balance">
+                    <h3 class="text-lime font-bold">Community-Drive Weather Insights</h3>
+                    The community feature allows users to view the latest updates from recent visitors at outdoor locations like forests, national parks, campgrounds, and hiking trails. These updates ensure users stay informed.
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="md:text-4xl text-2xl font-bold pb-4">User Flow</h2>
+            <p class="text-pretty xl:w-[60vw] pb-4">
+                The user flow outlines the structure of Pixel Weather and how both guests and registered users interact with the platform. 
+                Rectangles represent different screens, while diamonds indicate interaction points—color-coded to distinguish between actions available to all users and those exclusive to registered users.
+                Below is an overview of the four main screens: Home, Map, Add Post, and Community.
+            </p>
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 xl:w-[80vw]">
+                <div class="text-balance">
+                    <h3 class="text-lime font-bold">Home</h3>
+                    The Home Screen provides real-time weather updates for the user’s current location. Users can also search for weather information in other suburbs or cities.
+                </div>
+                <div class="text-balance">
+                    <h3 class="text-lime font-bold">Map</h3>
+                    The Map allows users to check nearby weather conditions. By clicking on an icon, users can switch to a detailed weather information view—using the same template as the Home Screen.
+                </div>
+                <div class="text-balance">
+                    <h3 class="text-lime font-bold">Add Post</h3>
+                    This feature is designed for outdoor enthusiasts who rely on firsthand, real-time weather insights. 
+                    Users can add a post by selecting a nearby location (e.g., national parks, forests, or trails) and updating the current weather conditions. 
+                    Since API-provided data may not always reflect real-time conditions, this feature allows users to share accurate updates. 
+                    Additionally, users can add notes to inform others about potential hazards, such as damaged trails or unsuitable camping spots.                
+                </div>
+                <div class="text-balance">
+                    <h3 class="text-lime font-bold">Community</h3>
+                    The Community section enables users to explore weather updates and posts shared by others. 
+                    Users can either browse bookmarked locations or search for new ones. 
+                    Each community page displays the location’s weather conditions, which can be expanded for a detailed view (using the same template as the Home Screen). 
+                    Additionally, the location address is copyable for easy navigation via third-party apps.
+                </div>
+            </div>
+            <div class="pt-8">
+                <img class="zoom-in" src="./assets/images/project-pixel-user_flow.jpg" alt="">
+            </div>
+        </div>
+        <div>
+            <h2 class="md:text-4xl text-2xl font-bold pb-4">Wireframes</h2>
+            <p class="text-pretty xl:w-[60vw] pb-4">
+                The wireframes illustrate the core screens of Pixel Weather, emphasizing usability and accessibility. 
+                Below is a breakdown of each screen’s key elements:
+            </p>
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-6 xl:w-[80vw]">
+                <div class="text-balance">
+                    <h3 class="text-lime font-bold">Home Screen</h3>
+                    The Home Screen is the first page users see, featuring a prominent weather icon to quickly convey current conditions. It also provides detailed weather data for the user’s location, including hourly forecasts and a seven-day outlook. 
+                    A variety of weather icons ensure easy recognition of changing conditions.                
+                </div>
+                <div class="text-balance">
+                    <h3 class="text-lime font-bold">Map Screen</h3>
+                    Weather icons are displayed across the map, positioned based on different cities and suburbs to provide an at-a-glance view of nearby weather conditions.
+                </div>
+                <div class="text-balance">
+                    <h3 class="text-lime font-bold">Add Post Screen</h3>
+                    When users create a new post, the location’s weather icon appears alongside the place’s name and address. 
+                    This helps users compare API-retrieved weather data with actual conditions. 
+                    If the information is inaccurate, users can correct it and contribute more reliable, firsthand insights for the community.              
+                </div>
+                <div class="text-balance">
+                    <h3 class="text-lime font-bold">Community Screen</h3>
+                    The Community section allows users to explore posts shared by others. 
+                    The top of the page features a map displaying the general location, with the current weather conditions shown below. 
+                    The latest posts are listed beneath the weather details, each accompanied by a weather icon selected by the original poster.
+                </div>
+            </div>
+            <div class="pt-8">
+                <img class="zoom-in" src="./assets/images/project-pixel-wireframes.png" alt="">
+            </div>
+        </div>
+        <div>
+            <h2 class="md:text-4xl text-2xl font-bold pb-4">Elements</h2>
+            <div>
+                <img class="zoom-in" src="./assets/images/project-pixel-materials.png" alt="">
+            </div>
+        </div>
+        <div>
+            <h2 class="md:text-4xl text-2xl font-bold pb-4">Prototype</h2>
+            <div class="grid sm:grid-cols-5 grid-cols-1 gap-4">
+                <img class="zoom-in" src="./assets/images/project-pixel-mobile_home.png" alt="">
+                <img class="zoom-in" src="./assets/images/project-pixel-mobile_map.png" alt="">
+                <img class="zoom-in" src="./assets/images/project-pixel-mobile_add_post.png" alt="">
+                <img class="zoom-in" src="./assets/images/project-pixel-mobile_community.png" alt="">
+                <img class="zoom-in" src="./assets/images/project-pixel-mobile_set_alert.png" alt="">
+                <img class="zoom-in" src="./assets/images/project-pixel-mobile_cloudy.png" alt="">
+                <img class="zoom-in" src="./assets/images/project-pixel-mobile_windy.png" alt="">
+                <img class="zoom-in" src="./assets/images/project-pixel-mobile_slight_rain.png" alt="">
+                <img class="zoom-in" src="./assets/images/project-pixel-mobile_fog.png" alt="">
+                <img class="zoom-in" src="./assets/images/project-pixel-mobile_sleet.png" alt="">
+            </div>
+            <div>
+                <img class="zoom-in" src="./assets/images/project-pixel-widget.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="p-8 h-[15vh] content-center flex justify-end font-body text-silver">
+        <button id="backToTop" class="btn hover:text-sun">
+            <svg class="size-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+            </svg>
+        </button>
+    </div>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
